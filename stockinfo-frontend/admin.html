@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Panel | StockInfo</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="navbarContainer"></div>
+
+<div class="container-fluid main-content">
+  <h3 class="page-title">Admin Panel</h3>
+  <p class="page-subtitle">Manage stocks, prices, and users</p>
+
+  <div class="row g-3 mb-4" id="statsRow"></div>
+
+  <ul class="nav nav-tabs mb-3">
+    <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#stocksTab">Manage Stocks</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#usersTab">Users</button></li>
+  </ul>
+
+  <div class="tab-content">
+    <!-- Stocks tab -->
+    <div class="tab-pane fade show active" id="stocksTab">
+      <div class="card p-3 mb-3">
+        <h6 class="fw-bold mb-3">Add New Stock</h6>
+        <form id="addStockForm" class="row g-2">
+          <div class="col-md-2"><input class="form-control" id="newSymbol" placeholder="Symbol" required></div>
+          <div class="col-md-3"><input class="form-control" id="newCompanyName" placeholder="Company Name" required></div>
+          <div class="col-md-2"><input class="form-control" id="newSector" placeholder="Sector" required></div>
+          <div class="col-md-2"><input class="form-control" id="newPrice" type="number" step="0.01" placeholder="Price" required></div>
+          <div class="col-md-3"><button class="btn btn-primary w-100" type="submit">Add Stock</button></div>
+        </form>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-hover align-middle bg-white">
+          <thead>
+            <tr><th>Symbol</th><th>Company</th><th>Sector</th><th>Price</th><th>Change</th><th>Update Price</th><th></th></tr>
+          </thead>
+          <tbody id="adminStocksBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Users tab -->
+    <div class="tab-pane fade" id="usersTab">
+      <div class="table-responsive">
+        <table class="table table-hover align-middle bg-white">
+          <thead>
+            <tr><th>Name</th><th>Username</th><th>Email</th><th>Role</th><th>Wallet Balance</th></tr>
+          </thead>
+          <tbody id="usersBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="appToast" class="toast text-bg-success" role="alert">
+    <div class="d-flex">
+      <div class="toast-body"></div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/api.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,371 @@
+symbol,companyName,sector,exchange,startingPrice
+TCS,Tata Consultancy Services,IT,NSE,3850.0
+INFY,Infosys Ltd,IT,NSE,1620.5
+WIPRO,Wipro Ltd,IT,NSE,485.2
+HCLTECH,HCL Technologies,IT,NSE,1750.0
+TECHM,Tech Mahindra,IT,NSE,1620.0
+LTIM,LTIMindtree,IT,NSE,5450.0
+MPHASIS,Mphasis Ltd,IT,NSE,2850.0
+PERSISTENT,Persistent Systems,IT,NSE,5200.0
+COFORGE,Coforge Ltd,IT,NSE,6100.0
+LTTS,L&T Technology Services,IT,NSE,4800.0
+OFSS,Oracle Financial Services,IT,NSE,8200.0
+KPITTECH,KPIT Technologies,IT,NSE,1450.0
+ZENSARTECH,Zensar Technologies,IT,NSE,680.0
+MASTEK,Mastek Ltd,IT,NSE,2900.0
+NEWGEN,Newgen Software,IT,NSE,950.0
+HDFCBANK,HDFC Bank Ltd,Banking,NSE,1685.3
+ICICIBANK,ICICI Bank Ltd,Banking,NSE,1145.6
+SBIN,State Bank of India,Banking,NSE,825.9
+AXISBANK,Axis Bank Ltd,Banking,NSE,1195.45
+KOTAKBANK,Kotak Mahindra Bank,Banking,NSE,1780.0
+INDUSINDBK,IndusInd Bank,Banking,NSE,1420.0
+BANKBARODA,Bank of Baroda,Banking,NSE,240.0
+PNB,Punjab National Bank,Banking,NSE,105.0
+CANBK,Canara Bank,Banking,NSE,520.0
+IDFCFIRSTB,IDFC First Bank,Banking,NSE,78.0
+FEDERALBNK,Federal Bank,Banking,NSE,195.0
+RBLBANK,RBL Bank,Banking,NSE,255.0
+AUBANK,AU Small Finance Bank,Banking,NSE,650.0
+BANDHANBNK,Bandhan Bank,Banking,NSE,210.0
+YESBANK,Yes Bank Ltd,Banking,NSE,24.0
+BAJFINANCE,Bajaj Finance,NBFC,NSE,7100.0
+BAJAJFINSV,Bajaj Finserv,NBFC,NSE,1650.0
+HDFCLIFE,HDFC Life Insurance,Insurance,NSE,620.0
+SBILIFE,SBI Life Insurance,Insurance,NSE,1450.0
+ICICIPRULI,ICICI Prudential Life,Insurance,NSE,620.0
+ICICIGI,ICICI Lombard General Insurance,Insurance,NSE,1850.0
+LICI,Life Insurance Corp of India,Insurance,NSE,920.0
+MUTHOOTFIN,Muthoot Finance,NBFC,NSE,1780.0
+CHOLAFIN,Cholamandalam Investment,NBFC,NSE,1350.0
+PFC,Power Finance Corp,NBFC,NSE,450.0
+RECLTD,REC Ltd,NBFC,NSE,520.0
+RELIANCE,Reliance Industries,Energy,NSE,2950.75
+ONGC,Oil & Natural Gas Corp,Energy,NSE,265.4
+IOC,Indian Oil Corporation,Energy,NSE,165.0
+BPCL,Bharat Petroleum Corp,Energy,NSE,310.0
+HPCL,Hindustan Petroleum Corp,Energy,NSE,395.0
+GAIL,GAIL India Ltd,Energy,NSE,195.0
+PETRONET,Petronet LNG,Energy,NSE,310.0
+OIL,Oil India Ltd,Energy,NSE,480.0
+ADANIGREEN,Adani Green Energy,Energy,NSE,1050.0
+ADANIPOWER,Adani Power,Energy,NSE,560.0
+ITC,ITC Ltd,FMCG,NSE,435.15
+HINDUNILVR,Hindustan Unilever,FMCG,NSE,2410.0
+NESTLEIND,Nestle India,FMCG,NSE,2350.0
+BRITANNIA,Britannia Industries,FMCG,NSE,4850.0
+DABUR,Dabur India,FMCG,NSE,560.0
+MARICO,Marico Ltd,FMCG,NSE,580.0
+GODREJCP,Godrej Consumer Products,FMCG,NSE,1180.0
+COLPAL,Colgate-Palmolive India,FMCG,NSE,2650.0
+TATACONSUM,Tata Consumer Products,FMCG,NSE,1050.0
+VBL,Varun Beverages,FMCG,NSE,620.0
+MARUTI,Maruti Suzuki India,Automobile,NSE,12450.0
+TATAMOTORS,Tata Motors Ltd,Automobile,NSE,985.75
+M&M,Mahindra & Mahindra,Automobile,NSE,2850.0
+BAJAJ-AUTO,Bajaj Auto Ltd,Automobile,NSE,9500.0
+HEROMOTOCO,Hero MotoCorp,Automobile,NSE,4650.0
+EICHERMOT,Eicher Motors,Automobile,NSE,4750.0
+ASHOKLEY,Ashok Leyland,Automobile,NSE,220.0
+TVSMOTOR,TVS Motor Company,Automobile,NSE,2450.0
+BALKRISIND,Balkrishna Industries,Automobile,NSE,2750.0
+MRF,MRF Ltd,Automobile,NSE,128000.0
+BOSCHLTD,Bosch Ltd,Automobile,NSE,32000.0
+EXIDEIND,Exide Industries,Automobile,NSE,420.0
+SUNPHARMA,Sun Pharmaceutical,Pharma,NSE,1720.4
+CIPLA,Cipla Ltd,Pharma,NSE,1495.2
+DRREDDY,Dr Reddys Laboratories,Pharma,NSE,6200.0
+DIVISLAB,Divis Laboratories,Pharma,NSE,4100.0
+LUPIN,Lupin Ltd,Pharma,NSE,2050.0
+AUROPHARMA,Aurobindo Pharma,Pharma,NSE,1350.0
+TORNTPHARM,Torrent Pharmaceuticals,Pharma,NSE,3250.0
+ALKEM,Alkem Laboratories,Pharma,NSE,4850.0
+BIOCON,Biocon Ltd,Pharma,NSE,350.0
+ZYDUSLIFE,Zydus Lifesciences,Pharma,NSE,980.0
+BHARTIARTL,Bharti Airtel Ltd,Telecom,NSE,1380.6
+IDEA,Vodafone Idea,Telecom,NSE,14.5
+INDUSTOWER,Indus Towers,Telecom,NSE,380.0
+TATASTEEL,Tata Steel Ltd,Metals,NSE,165.0
+JSWSTEEL,JSW Steel Ltd,Metals,NSE,950.0
+HINDALCO,Hindalco Industries,Metals,NSE,650.0
+VEDL,Vedanta Ltd,Metals,NSE,460.0
+JINDALSTEL,Jindal Steel & Power,Metals,NSE,980.0
+SAIL,Steel Authority of India,Metals,NSE,130.0
+NMDC,NMDC Ltd,Metals,NSE,240.0
+NATIONALUM,National Aluminium Co,Metals,NSE,180.0
+HINDZINC,Hindustan Zinc,Metals,NSE,450.0
+APLAPOLLO,APL Apollo Tubes,Metals,NSE,1650.0
+ULTRACEMCO,UltraTech Cement,Cement,NSE,10500.0
+SHREECEM,Shree Cement,Cement,NSE,26000.0
+AMBUJACEM,Ambuja Cements,Cement,NSE,580.0
+ACC,ACC Ltd,Cement,NSE,2350.0
+DALBHARAT,Dalmia Bharat,Cement,NSE,1950.0
+JKCEMENT,JK Cement,Cement,NSE,4200.0
+RAMCOCEM,Ramco Cements,Cement,NSE,950.0
+LT,Larsen & Toubro,Infrastructure,NSE,3560.8
+ADANIPORTS,Adani Ports & SEZ,Infrastructure,NSE,1350.0
+GMRINFRA,GMR Airports Infra,Infrastructure,NSE,95.0
+IRB,IRB Infrastructure,Infrastructure,NSE,65.0
+NCC,NCC Ltd,Infrastructure,NSE,280.0
+NBCC,NBCC India,Infrastructure,NSE,115.0
+RVNL,Rail Vikas Nigam,Infrastructure,NSE,450.0
+IRCON,Ircon International,Infrastructure,NSE,210.0
+TITAN,Titan Company Ltd,Consumer Goods,NSE,3420.5
+ASIANPAINT,Asian Paints Ltd,Consumer Goods,NSE,2985.0
+BERGEPAINT,Berger Paints India,Consumer Goods,NSE,580.0
+HAVELLS,Havells India,Consumer Goods,NSE,1650.0
+VOLTAS,Voltas Ltd,Consumer Goods,NSE,1450.0
+CROMPTON,Crompton Greaves Consumer,Consumer Goods,NSE,380.0
+DMART,Avenue Supermarts (DMart),Retail,NSE,4200.0
+TRENT,Trent Ltd,Retail,NSE,5850.0
+ABFRL,Aditya Birla Fashion,Retail,NSE,280.0
+SHOPERSTOP,Shoppers Stop,Retail,NSE,750.0
+VMART,V-Mart Retail,Retail,NSE,2650.0
+RELAXO,Relaxo Footwears,Retail,NSE,850.0
+ADANIENT,Adani Enterprises,Diversified,NSE,2890.3
+GRASIM,Grasim Industries,Diversified,NSE,2350.0
+SIEMENS,Siemens Ltd,Diversified,NSE,6500.0
+NTPC,NTPC Ltd,Power,NSE,360.0
+POWERGRID,Power Grid Corp,Power,NSE,320.0
+TATAPOWER,Tata Power Company,Power,NSE,420.0
+TORNTPOWER,Torrent Power,Power,NSE,1650.0
+JSWENERGY,JSW Energy,Power,NSE,650.0
+NHPC,NHPC Ltd,Power,NSE,95.0
+DLF,DLF Ltd,Realty,NSE,850.0
+GODREJPROP,Godrej Properties,Realty,NSE,2650.0
+OBEROIRLTY,Oberoi Realty,Realty,NSE,1750.0
+PRESTIGE,Prestige Estates Projects,Realty,NSE,1650.0
+PHOENIXLTD,Phoenix Mills,Realty,NSE,2850.0
+ZEEL,Zee Entertainment Enterprises,Media,NSE,145.0
+SUNTV,Sun TV Network,Media,NSE,650.0
+PVRINOX,PVR Inox Ltd,Media,NSE,1350.0
+NETWORK18,Network18 Media,Media,NSE,65.0
+INDIGO,InterGlobe Aviation (IndiGo),Airlines,NSE,4200.0
+SPICEJET,SpiceJet Ltd,Airlines,NSE,65.0
+PIDILITIND,Pidilite Industries,Chemicals,NSE,2950.0
+SRF,SRF Ltd,Chemicals,NSE,2450.0
+UPL,UPL Ltd,Chemicals,NSE,580.0
+AARTIIND,Aarti Industries,Chemicals,NSE,650.0
+DEEPAKNTR,Deepak Nitrite,Chemicals,NSE,2350.0
+GNFC,Gujarat Narmada Valley Fertilizers,Chemicals,NSE,650.0
+ZOMATO,Zomato Ltd,New Age Tech,NSE,180.0
+NYKAA,FSN E-Commerce (Nykaa),New Age Tech,NSE,165.0
+PAYTM,One97 Communications (Paytm),New Age Tech,NSE,450.0
+POLICYBZR,PB Fintech (Policybazaar),New Age Tech,NSE,1250.0
+DELHIVERY,Delhivery Ltd,New Age Tech,NSE,380.0
+IRCTC,Indian Railway Catering (IRCTC),New Age Tech,NSE,950.0
+APOLLOHOSP,Apollo Hospitals Enterprise,Healthcare,NSE,6200.0
+FORTIS,Fortis Healthcare,Healthcare,NSE,480.0
+MAXHEALTH,Max Healthcare Institute,Healthcare,NSE,850.0
+METROPOLIS,Metropolis Healthcare,Healthcare,NSE,1850.0
+LALPATHLAB,Dr Lal PathLabs,Healthcare,NSE,2650.0
+PAGEIND,Page Industries,Textiles,NSE,38000.0
+RAYMOND,Raymond Ltd,Textiles,NSE,1850.0
+HAL,Hindustan Aeronautics,Defence,NSE,4200.0
+BEL,Bharat Electronics,Defence,NSE,280.0
+BEML,BEML Ltd,Defence,NSE,3650.0
+MAZDOCK,Mazagon Dock Shipbuilders,Defence,NSE,4200.0
+SCI,Shipping Corporation of India,Shipping,NSE,210.0
+BATAINDIA,Bata India,Retail,NSE,1450.0
+MANAPPURAM,Manappuram Finance,NBFC,NSE,185.0
+CUB,City Union Bank,Banking,NSE,165.0
+CDSL,Central Depository Services,Financial Services,NSE,1650.0
+BSE,BSE Ltd,Financial Services,NSE,2850.0
+MCX,Multi Commodity Exchange,Financial Services,NSE,4200.0
+CAMS,Computer Age Management Services,Financial Services,NSE,3650.0
+ANGELONE,Angel One Ltd,Financial Services,NSE,2650.0
+INDIAMART,IndiaMART InterMESH,New Age Tech,NSE,2650.0
+JUSTDIAL,Just Dial Ltd,New Age Tech,NSE,980.0
+TATAELXSI,Tata Elxsi Ltd,IT,NSE,6800.0
+CYIENT,Cyient Ltd,IT,NSE,1650.0
+HEXAWARE,Hexaware Technologies,IT,NSE,650.0
+AAPL,Apple Inc.,Technology,NASDAQ,229.52
+MSFT,Microsoft Corp,Technology,NASDAQ,511.4
+GOOGL,Alphabet Inc.,Technology,NASDAQ,178.0
+AMZN,Amazon.com Inc.,Technology,NASDAQ,210.0
+META,Meta Platforms Inc.,Technology,NASDAQ,590.0
+NVDA,NVIDIA Corp,Technology,NASDAQ,135.0
+TSLA,Tesla Inc.,Automobile,NASDAQ,287.07
+ORCL,Oracle Corp,Technology,NASDAQ,175.0
+ADBE,Adobe Inc.,Technology,NASDAQ,480.0
+CRM,Salesforce Inc.,Technology,NASDAQ,300.0
+INTC,Intel Corp,Technology,NASDAQ,32.0
+AMD,Advanced Micro Devices,Technology,NASDAQ,145.0
+CSCO,Cisco Systems,Technology,NASDAQ,58.0
+IBM,IBM Corp,Technology,NYSE,190.0
+QCOM,Qualcomm Inc.,Technology,NASDAQ,165.0
+TXN,Texas Instruments,Technology,NASDAQ,195.0
+AVGO,Broadcom Inc.,Technology,NASDAQ,165.0
+NFLX,Netflix Inc.,Technology,NASDAQ,680.0
+PYPL,PayPal Holdings,Technology,NASDAQ,78.0
+UBER,Uber Technologies,Technology,NASDAQ,72.0
+JPM,JPMorgan Chase & Co,Finance,NYSE,210.0
+BAC,Bank of America,Finance,NYSE,40.0
+WFC,Wells Fargo & Co,Finance,NYSE,58.0
+GS,Goldman Sachs Group,Finance,NYSE,480.0
+MS,Morgan Stanley,Finance,NYSE,105.0
+C,Citigroup Inc.,Finance,NYSE,65.0
+AXP,American Express,Finance,NYSE,250.0
+BLK,BlackRock Inc.,Finance,NYSE,850.0
+SCHW,Charles Schwab Corp,Finance,NYSE,70.0
+V,Visa Inc.,Finance,NYSE,280.0
+MA,Mastercard Inc.,Finance,NYSE,460.0
+USB,US Bancorp,Finance,NYSE,45.0
+PNC,PNC Financial Services,Finance,NYSE,165.0
+TFC,Truist Financial,Finance,NYSE,40.0
+WMT,Walmart Inc.,Retail,NYSE,78.0
+COST,Costco Wholesale,Retail,NASDAQ,900.0
+TGT,Target Corp,Retail,NYSE,145.0
+HD,Home Depot Inc.,Retail,NYSE,390.0
+LOW,Lowes Companies,Retail,NYSE,240.0
+NKE,Nike Inc.,Retail,NYSE,78.0
+SBUX,Starbucks Corp,Retail,NASDAQ,95.0
+MCD,McDonalds Corp,Retail,NYSE,295.0
+KO,Coca-Cola Co,Consumer Goods,NYSE,65.0
+PEP,PepsiCo Inc.,Consumer Goods,NYSE,165.0
+PG,Procter & Gamble,Consumer Goods,NYSE,165.0
+CL,Colgate-Palmolive,Consumer Goods,NYSE,95.0
+KMB,Kimberly-Clark Corp,Consumer Goods,NYSE,135.0
+EL,Estee Lauder Companies,Consumer Goods,NYSE,70.0
+MO,Altria Group,Consumer Goods,NYSE,55.0
+F,Ford Motor Co,Automobile,NYSE,11.0
+GM,General Motors Co,Automobile,NYSE,52.0
+TM,Toyota Motor Corp,Automobile,NYSE,190.0
+HMC,Honda Motor Co,Automobile,NYSE,32.0
+STLA,Stellantis NV,Automobile,NYSE,13.0
+RIVN,Rivian Automotive,Automobile,NYSE,13.0
+LCID,Lucid Group,Automobile,NYSE,3.0
+JNJ,Johnson & Johnson,Healthcare,NYSE,155.0
+PFE,Pfizer Inc.,Healthcare,NYSE,26.0
+MRK,Merck & Co,Healthcare,NYSE,95.0
+ABBV,AbbVie Inc.,Healthcare,NYSE,185.0
+LLY,Eli Lilly & Co,Healthcare,NYSE,850.0
+BMY,Bristol-Myers Squibb,Healthcare,NYSE,55.0
+UNH,UnitedHealth Group,Healthcare,NYSE,520.0
+CVS,CVS Health Corp,Healthcare,NYSE,65.0
+ABT,Abbott Laboratories,Healthcare,NYSE,115.0
+TMO,Thermo Fisher Scientific,Healthcare,NYSE,550.0
+GILD,Gilead Sciences,Healthcare,NYSE,95.0
+AMGN,Amgen Inc.,Healthcare,NYSE,290.0
+XOM,Exxon Mobil Corp,Energy,NYSE,115.0
+CVX,Chevron Corp,Energy,NYSE,155.0
+COP,ConocoPhillips,Energy,NYSE,105.0
+SLB,Schlumberger NV,Energy,NYSE,45.0
+OXY,Occidental Petroleum,Energy,NYSE,50.0
+EOG,EOG Resources,Energy,NYSE,120.0
+BP,BP plc,Energy,NYSE,35.0
+SHEL,Shell plc,Energy,NYSE,68.0
+GE,General Electric,Industrial,NYSE,190.0
+HON,Honeywell International,Industrial,NYSE,210.0
+CAT,Caterpillar Inc.,Industrial,NYSE,380.0
+BA,Boeing Co,Industrial,NYSE,180.0
+LMT,Lockheed Martin,Industrial,NYSE,480.0
+RTX,RTX Corp,Industrial,NYSE,120.0
+DE,Deere & Co,Industrial,NYSE,390.0
+MMM,3M Co,Industrial,NYSE,130.0
+UPS,United Parcel Service,Industrial,NYSE,130.0
+FDX,FedEx Corp,Industrial,NYSE,280.0
+T,AT&T Inc.,Telecom,NYSE,22.0
+VZ,Verizon Communications,Telecom,NYSE,40.0
+TMUS,T-Mobile US,Telecom,NYSE,225.0
+CMCSA,Comcast Corp,Telecom,NYSE,38.0
+DIS,Walt Disney Co,Media,NYSE,110.0
+DAL,Delta Air Lines,Airlines,NYSE,48.0
+UAL,United Airlines Holdings,Airlines,NYSE,65.0
+AAL,American Airlines Group,Airlines,NYSE,12.0
+LUV,Southwest Airlines,Airlines,NYSE,30.0
+STZ,Constellation Brands,Consumer Goods,NYSE,235.0
+LULU,Lululemon Athletica,Retail,NASDAQ,280.0
+VFC,VF Corp,Retail,NYSE,18.0
+EBAY,eBay Inc.,Technology,NASDAQ,65.0
+ETSY,Etsy Inc.,Technology,NASDAQ,55.0
+TSM,Taiwan Semiconductor,Technology,NASDAQ,190.0
+BABA,Alibaba Group,Technology,NYSE,85.0
+NVO,Novo Nordisk,Healthcare,NYSE,110.0
+ASML,ASML Holding,Technology,NASDAQ,720.0
+SAP,SAP SE,Technology,NYSE,230.0
+SONY,Sony Group Corp,Technology,NYSE,22.0
+HSBC,HSBC Holdings,Finance,NYSE,48.0
+RY,Royal Bank of Canada,Finance,NYSE,115.0
+GLAND,Gland Pharma,Pharma,NSE,1750.0
+GLENMARK,Glenmark Pharmaceuticals,Pharma,NSE,1450.0
+IPCALAB,IPCA Laboratories,Pharma,NSE,1550.0
+ABBOTINDIA,Abbott India,Pharma,NSE,29000.0
+MANKIND,Mankind Pharma,Pharma,NSE,2400.0
+LAURUSLABS,Laurus Labs,Pharma,NSE,550.0
+GRSE,Garden Reach Shipbuilders,Defence,NSE,1900.0
+COCHINSHIP,Cochin Shipyard,Defence,NSE,2200.0
+UNIONBANK,Union Bank of India,Banking,NSE,120.0
+SJVN,SJVN Ltd,Power,NSE,120.0
+ADANIENSOL,Adani Energy Solutions,Power,NSE,950.0
+UBL,United Breweries,FMCG,NSE,2100.0
+PGHH,Procter & Gamble Hygiene,FMCG,NSE,15000.0
+GILLETTE,Gillette India,FMCG,NSE,8500.0
+HONAUT,Honeywell Automation India,Capital Goods,NSE,45000.0
+MOTHERSON,Samvardhana Motherson,Automobile,NSE,165.0
+APOLLOTYRE,Apollo Tyres,Automobile,NSE,480.0
+DIXON,Dixon Technologies,Consumer Goods,NSE,13500.0
+BLUESTARCO,Blue Star Ltd,Consumer Goods,NSE,1650.0
+WHIRLPOOL,Whirlpool of India,Consumer Goods,NSE,1750.0
+KAJARIACER,Kajaria Ceramics,Consumer Goods,NSE,1350.0
+POLYCAB,Polycab India,Capital Goods,NSE,6900.0
+THERMAX,Thermax Ltd,Capital Goods,NSE,4900.0
+CUMMINSIND,Cummins India,Capital Goods,NSE,3400.0
+ABB,ABB India,Capital Goods,NSE,6900.0
+KEC,KEC International,Infrastructure,NSE,900.0
+CONCOR,Container Corp of India,Logistics,NSE,900.0
+BLUEDART,Blue Dart Express,Logistics,NSE,7500.0
+GATI,Gati Ltd,Logistics,NSE,80.0
+VRLLOG,VRL Logistics,Logistics,NSE,550.0
+SOBHA,Sobha Ltd,Realty,NSE,1650.0
+BRIGADE,Brigade Enterprises,Realty,NSE,1100.0
+NIACL,New India Assurance,Insurance,NSE,220.0
+GICRE,General Insurance Corp,Insurance,NSE,400.0
+STARHEALTH,Star Health Insurance,Insurance,NSE,600.0
+HDFCAMC,HDFC Asset Management,Finance,NSE,4000.0
+SHRIRAMFIN,Shriram Finance,Finance,NSE,3000.0
+LICHSGFIN,LIC Housing Finance,Finance,NSE,650.0
+IRFC,Indian Railway Finance Corp,Finance,NSE,150.0
+SBICARD,SBI Cards & Payments,Finance,NSE,750.0
+M&MFIN,Mahindra & Mahindra Finance,Finance,NSE,280.0
+PNBHOUSING,PNB Housing Finance,Finance,NSE,900.0
+JUBLFOOD,Jubilant FoodWorks,Retail,NSE,650.0
+PIIND,PI Industries,Chemicals,NSE,3500.0
+TATACHEM,Tata Chemicals,Chemicals,NSE,1050.0
+COROMANDEL,Coromandel International,Chemicals,NSE,1450.0
+NAVINFLUOR,Navin Fluorine,Chemicals,NSE,3400.0
+ARVIND,Arvind Ltd,Textiles,NSE,400.0
+WELSPUNIND,Welspun Living,Textiles,NSE,150.0
+TRIDENT,Trident Ltd,Textiles,NSE,38.0
+IEX,Indian Energy Exchange,Finance,NSE,180.0
+JIOFIN,Jio Financial Services,Finance,NSE,330.0
+TATACOMM,Tata Communications,Telecom,NSE,1800.0
+PANW,Palo Alto Networks,Technology,NASDAQ,320.0
+CRWD,CrowdStrike Holdings,Technology,NASDAQ,300.0
+SNOW,Snowflake Inc.,Technology,NYSE,120.0
+NET,Cloudflare Inc.,Technology,NYSE,90.0
+DDOG,Datadog Inc.,Technology,NASDAQ,110.0
+MDB,MongoDB Inc.,Technology,NASDAQ,250.0
+PLTR,Palantir Technologies,Technology,NASDAQ,45.0
+RBLX,Roblox Corporation,Technology,NYSE,40.0
+DELL,Dell Technologies,Technology,NYSE,90.0
+HPQ,HP Inc.,Technology,NYSE,32.0
+COF,Capital One Financial,Finance,NYSE,150.0
+AIG,American International Group,Finance,NYSE,80.0
+MET,MetLife Inc.,Finance,NYSE,80.0
+PRU,Prudential Financial,Finance,NYSE,110.0
+PM,Philip Morris International,Consumer Goods,NYSE,120.0
+WBD,Warner Bros Discovery,Media,NASDAQ,10.0
+PARA,Paramount Global,Media,NASDAQ,12.0
+YUM,Yum Brands Inc.,Retail,NYSE,135.0
+NIO,NIO Inc,Automobile,NYSE,5.0
+JD,JD.com Inc,Technology,NASDAQ,32.0
+PDD,PDD Holdings,Technology,NASDAQ,120.0
+UL,Unilever PLC,FMCG,NYSE,58.0
+NSRGY,Nestle SA,FMCG,NYSE,95.0
+DEO,Diageo plc,FMCG,NYSE,130.0
+BUD,Anheuser-Busch InBev,FMCG,NYSE,60.0
+NVS,Novartis AG,Healthcare,NYSE,110.0
+AZN,AstraZeneca PLC,Healthcare,NASDAQ,75.0
+SNY,Sanofi SA,Healthcare,NASDAQ,55.0
+TTE,TotalEnergies SE,Energy,NYSE,65.0
