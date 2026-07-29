@@ -6,7 +6,7 @@
 //   showToast(message, isError) -> shared toast notification
 //   formatCurrency(n) / formatPercent(n) -> shared number formatting
 
-const API_BASE_URL = "http://localhost:8080/api";
+const API_BASE_URL = "const API_BASE_URL = \"https://stockinfo-production.up.railway.app/api\";";
 
 function getToken() {
     return sessionStorage.getItem("stockinfo_token");
