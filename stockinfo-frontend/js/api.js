@@ -6,7 +6,7 @@
     document.documentElement.setAttribute("data-theme", saved);
 })();
 
-const API_BASE_URL = "https://stockinfo-production.up.railway.app";
+const API_BASE_URL = "https://stockinfo-production.up.railway.app/api";
 
 function getToken() {
     return sessionStorage.getItem("stockinfo_token");
