@@ -1,12 +1,12 @@
 // Centralized API wrapper for the StockInfo frontend.
-// Every page includes this file first - it provides:
-//   Api    -> get/post/put/del helpers that talk to the Spring Boot backend
-//   Auth   -> login/register/logout + route guarding + current-user info
-//   renderNavbar(activePage) -> shared top navbar, built once here
-//   showToast(message, isError) -> shared toast notification
-//   formatCurrency(n) / formatPercent(n) -> shared number formatting
 
-const API_BASE_URL = "const API_BASE_URL = \"https://stockinfo-production.up.railway.app/api\";";
+// Apply saved theme immediately (before paint) so pages never flash the wrong theme.
+(function () {
+    const saved = localStorage.getItem("stockinfo_theme") || "light";
+    document.documentElement.setAttribute("data-theme", saved);
+})();
+
+const API_BASE_URL = "http://stockinfo-production.up.railway.app";
 
 function getToken() {
     return sessionStorage.getItem("stockinfo_token");
@@ -99,6 +99,26 @@ const Auth = {
     }
 };
 
+const Theme = {
+    get() {
+        return document.documentElement.getAttribute("data-theme") || "light";
+    },
+    set(theme) {
+        document.documentElement.setAttribute("data-theme", theme);
+        localStorage.setItem("stockinfo_theme", theme);
+        Theme.updateIcons();
+    },
+    toggle() {
+        Theme.set(Theme.get() === "dark" ? "light" : "dark");
+    },
+    updateIcons() {
+        const isDark = Theme.get() === "dark";
+        document.querySelectorAll(".theme-toggle-icon").forEach(icon => {
+            icon.className = "bi theme-toggle-icon " + (isDark ? "bi-sun" : "bi-moon-stars");
+        });
+    }
+};
+
 function formatCurrency(n) {
     const value = Number(n) || 0;
     return "₹" + value.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -150,7 +170,7 @@ function renderNavbar(activePage) {
     `).join("");
 
     container.innerHTML = `
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background:#0f172a;">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background:var(--bg-navbar);">
             <div class="container-fluid">
                 <a class="navbar-brand" href="dashboard.html">Stock<span>Info</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
@@ -158,6 +178,9 @@ function renderNavbar(activePage) {
                 </button>
                 <div class="collapse navbar-collapse" id="mainNav">
                     <ul class="navbar-nav me-auto">${navLinks}</ul>
+                    <button class="theme-toggle-btn me-3" onclick="Theme.toggle()" title="Toggle dark/light mode">
+                        <i class="bi bi-moon-stars theme-toggle-icon"></i>
+                    </button>
                     <button class="btn btn-sm btn-outline-light me-2" id="profileTrigger" data-bs-toggle="modal" data-bs-target="#profileModal">
                         <i class="bi bi-person-circle me-1"></i>${user ? user.fullName : ""}
                     </button>
@@ -170,6 +193,7 @@ function renderNavbar(activePage) {
     `;
 
     injectProfileModal();
+    Theme.updateIcons();
 }
 
 function injectProfileModal() {

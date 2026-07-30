@@ -11,6 +11,13 @@
 <body>
 
 <div class="auth-wrapper">
+  <div class="auth-bg-bars" id="authBgBars"></div>
+
+  <button class="theme-toggle-btn theme-toggle-floating" onclick="Theme.toggle()" title="Toggle dark/light mode">
+    <i class="bi bi-moon-stars theme-toggle-icon"></i>
+  </button>
+
+
   <div class="auth-card">
     <div class="text-center mb-4">
       <i class="bi bi-graph-up-arrow brand-icon"></i>
@@ -68,6 +75,30 @@
   if (Auth.isLoggedIn()) {
     window.location.href = "dashboard.html";
   }
+  Theme.updateIcons();
+
+  (function renderBars() {
+    const container = document.getElementById("authBgBars");
+    const count = 18;
+    for (let i = 0; i < count; i++) {
+      const bar = document.createElement("span");
+      const left = Math.random() * 100;
+      const height = 40 + Math.random() * 140;
+      const delay = Math.random() * 8;
+      const duration = 6 + Math.random() * 6;
+      bar.style.left = `${left}%`;
+      bar.style.height = `${height}px`;
+      bar.style.animationDelay = `${delay}s`;
+      bar.style.animationDuration = `${duration}s`;
+      container.appendChild(bar);
+    }
+  })();
+
+
+
+
+
+
 
   document.getElementById("togglePassword").addEventListener("click", () => {
     const pwd = document.getElementById("password");
