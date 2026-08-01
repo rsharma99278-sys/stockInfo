@@ -12,17 +12,10 @@ import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
-/**
- * Very simple rule-based Buy/Hold/Sell suggestion engine.
- * This is intentionally basic - it is meant to demonstrate the concept for
- * an academic project, not to be real financial advice.
- *
- * Rules:
- *  - changePercent <= -3%   -> BUY  (stock dipped, potential value opportunity)
- *  - changePercent >= +5%   -> SELL (stock has rallied hard, consider booking profit)
- *  - otherwise              -> HOLD
- */
 @Service
 @RequiredArgsConstructor
 public class SuggestionService {
@@ -35,54 +28,59 @@ public class SuggestionService {
 
     public List<SuggestionDto> getAllSuggestions() {
         return stockRepository.findAll().stream()
-                .map(this::generateSuggestion)
+                .map(this::toDto)
                 .toList();
     }
 
     public SuggestionDto getSuggestionForStock(String symbol) {
         Stock stock = stockRepository.findBySymbolIgnoreCase(symbol)
                 .orElseThrow(() -> new com.stockinfo.exception.ResourceNotFoundException("Stock not found: " + symbol));
-        return generateSuggestion(stock);
+        return toDto(stock);
     }
 
-    /**
-     * Recalculates and persists suggestions for every stock. Runs automatically
-     * every time stock prices are refreshed by the simulator, and can also be
-     * triggered manually via the admin panel.
-     */
     @Scheduled(fixedRate = 60000)
     public void refreshAllSuggestions() {
-        stockRepository.findAll().forEach(this::generateSuggestion);
+        List<Stock> stocks = stockRepository.findAll();
+
+        Map<Long, InvestmentSuggestion> existingByStockId = suggestionRepository.findAll().stream()
+                .collect(Collectors.toMap(s -> s.getStock().getId(), Function.identity(), (a, b) -> a));
+
+        List<InvestmentSuggestion> toSave = stocks.stream().map(stock -> {
+            SuggestionResult result = computeSuggestion(stock);
+            InvestmentSuggestion suggestion = existingByStockId.getOrDefault(
+                    stock.getId(), InvestmentSuggestion.builder().stock(stock).build());
+            suggestion.setSuggestion(result.type());
+            suggestion.setReason(result.reason());
+            return suggestion;
+        }).toList();
+
+        suggestionRepository.saveAll(toSave);
     }
 
-    private SuggestionDto generateSuggestion(Stock stock) {
-        SuggestionType type;
-        String reason;
-
-        BigDecimal change = stock.getChangePercent();
-
-        if (change.compareTo(BUY_THRESHOLD) <= 0) {
-            type = SuggestionType.BUY;
-            reason = "Price dropped " + change.abs() + "% - potential buying opportunity";
-        } else if (change.compareTo(SELL_THRESHOLD) >= 0) {
-            type = SuggestionType.SELL;
-            reason = "Price surged " + change + "% - consider booking profits";
-        } else {
-            type = SuggestionType.HOLD;
-            reason = "Price movement (" + change + "%) is within normal range";
-        }
-
-        InvestmentSuggestion suggestion = suggestionRepository.findByStock(stock)
-                .orElse(InvestmentSuggestion.builder().stock(stock).build());
-        suggestion.setSuggestion(type);
-        suggestion.setReason(reason);
-        suggestionRepository.save(suggestion);
-
+    private SuggestionDto toDto(Stock stock) {
+        SuggestionResult result = computeSuggestion(stock);
         return SuggestionDto.builder()
                 .symbol(stock.getSymbol())
                 .companyName(stock.getCompanyName())
-                .suggestion(type.name())
-                .reason(reason)
+                .suggestion(result.type().name())
+                .reason(result.reason())
                 .build();
     }
+
+    private SuggestionResult computeSuggestion(Stock stock) {
+        BigDecimal change = stock.getChangePercent();
+
+        if (change.compareTo(BUY_THRESHOLD) <= 0) {
+            return new SuggestionResult(SuggestionType.BUY,
+                    "Price dropped " + change.abs() + "% - potential buying opportunity");
+        } else if (change.compareTo(SELL_THRESHOLD) >= 0) {
+            return new SuggestionResult(SuggestionType.SELL,
+                    "Price surged " + change + "% - consider booking profits");
+        } else {
+            return new SuggestionResult(SuggestionType.HOLD,
+                    "Price movement (" + change + "%) is within normal range");
+        }
+    }
+
+    private record SuggestionResult(SuggestionType type, String reason) {}
 }
